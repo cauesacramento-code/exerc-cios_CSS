@@ -1,190 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lorem Ipsum</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - CSS</title>
     <style>
-        body {
+        *{
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f3b46;
+            padding: 0;
         }
-
-        header {
-            background-color: #0f3b46;
+        .top_menu{
             text-align: center;
-            padding: 20px;
-            color: white;
+            background-color: blueviolet;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 32px;
+        .linha_rosa{
+            background-color: rgb(193, 64, 142);
         }
-
-        nav {
-            background-color: #e58aa0;
+        main{
+            columns: 3;
+            background-color: aqua;
+        }
+        .cent_img{
             text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: black;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .container {
-            background-color: #bcd6df;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-        }
-
-        .left {
-            width: 30%;
-        }
-
-        .left img {
-            width: 100%;
-        }
-
-        .right {
-            width: 70%;
-            column-count: 2;
-            column-gap: 20px;
-            text-align: justify;
-        }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        footer {
-            background-color: #e58aa0;
-            text-align: center;
-            padding: 10px;
-            font-style: italic;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #caa3ff;
         }
     </style>
-
 </head>
-
 <body>
-
     <header>
-        <img src="Img/LoremLogo.png" height="200" widht="300">
-    </header>
-
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">CONDOMÍNIOS</a>
-        <a href="#">LAZER</a>
-        <a href="#">PLANOS</a>
-    </nav>
-
-    <div class="container">
-
-        <div class="left">
-            <h2>Conheça a Lorem Ipsum</h2>
-            <img src="Img/LoremLogo.png" alt="Imagem" height="250" width="100">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sequi, a voluptas? Quidem nesciunt quo sint quibusdam fugit.
-            </p>
+        <div class="top_menu">
+            <img src="Img/LoremLogo.png" width="10%">
+            <br>
+            <div class="linha_rosa">
+                <span>HOME</span>
+                <span>CONDOMINIO</span>
+                <span>LAZER</span>
+                <span>PLANO</span>
+            </div>
         </div>
-
-        <div class="right">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates placeat perspiciatis, exercitationem totam,
-                illo hic accusamus quaerat ut laboriosam tenetur tempora.
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo! Consequatur, nesciunt?
-            </p>
-
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem praesentium dicta quasi quae.
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur ex nesciunt explicabo!
-            </p>
-        </div>
-
-    </div>
-    <header>
-        © Lorem ipsum - Tec. Multimídia - SENAI - SP <br>
-        Santa Cruz do Rio Pardo - SP
     </header>
+    <main>
+        <h1>LOREM</h1>
+        <div class="cent_img">
+            <img src="Img/LoremLogo.png" width="75%">
+        </div>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
+       <div class="cent_img">
+            <img src="Img/LoremLogo.png" width="25%">
+        </div>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dignissimos nisi nemo libero repellat nihil tempore similique maxime sapiente perferendis, ipsum odit, expedita blanditiis minima tenetur a. Qui, iure aliquid.
+        </p>
 
+    </main>
+    <footer>
+        <div class="linha_rosa">
+            <br>
+        </div>
+        <div class="top_menu">
+            <p>TEC MULTIMIDIA - SENAI SP</p>
+            <p>Santa Cruz do Rio Pardo - SP</p>
+        </div>
+    </footer>
 </body>
 </html>
