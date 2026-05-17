@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 09 </title>
+    <title> Exercicio 9 </title>
     <style>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
+        /* fonte de letra externa (finger)*/
         body,
         html {
             margin: 0;
             padding: 0;
             height: 100%;
+            /* sem distancia, altura total da tela */
         }
 
         .cabe {
             width: 100%;
             height: 100px;
             background-color: #e3e8dd;
+            /* tamanho total, cor de fundo branca*/
         }
 
         input {
@@ -29,7 +33,7 @@
             background-color: #ffffff;
             border: solid rgb(1, 1, 1) 1.5px;
             border-radius: 10px;
-            background-image: url(Imagem/64673.png);
+            background-image: url(IMG/64673.png);
             background-size: 10%;
             background-repeat: no-repeat;
             background-position: top 5px right 10px;
@@ -38,10 +42,12 @@
             float: right;
         }
 
+        /* Isso é o espaço da barra de pesquisa */
         .logo {
             float: left;
             text-indent: 20px;
             width: 20%;
+            /* logo no canto esquerdo */
         }
 
         .cabe ul {
@@ -50,20 +56,23 @@
             margin: 0px 0px 0px 20px;
             line-height: 100px;
             text-align: center;
+            /* textos do menu */
         }
 
         .cabe ul li {
             text-decoration: none;
             display: inline;
-            padding: 20px;
+            padding: 20;
             color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 1.5em;
             cursor: pointer;
+            /* textos do menu */
         }
 
         .cabe ul li:hover {
-            color: rgb(25, 121, 25);
+            color: rgb(55, 120, 31);
+            /* O que acontece com os textos do menu quando você passa o mouse por cima */
         }
 
         .box1,
@@ -76,22 +85,23 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            /* configurações de todos os boxes de imagem de fundo, aqueles que não se mexem com fixed. */
         }
 
         .box1 {
-            background-image: url(Imagem/bAP.gif);
+            background-image: url(Img/foto\ natura.jpg);
         }
 
         .box2 {
-            background-image: url(Imagem/foto02.jpg);
+            background-image: url(Img/foto\ natura.jpg);
         }
 
         .box3 {
-            background-image: url(Imagem/foto03.jpg);
+            background-image: url(Img/foto\ natura.jpg);
         }
 
         .box4 {
-            background-image: url(Imagem/foto04.jpg);
+            background-image: url(Img/foto\ natura.jpg);
         }
 
         .cont-img {
@@ -99,6 +109,7 @@
             top: 45%;
             width: 100%;
             text-align: center;
+            /* posição do negocio que fica no centro no box */
         }
 
         .cont-img span.titulo {
@@ -107,64 +118,76 @@
             padding: 20px;
             font-size: 20px;
             letter-spacing: 5px;
+            /* Texto do negocio no incio no centro */
         }
 
         .conteudo {
-            background-color: #3e3e8dd;
+            background-color: #e3e8dd;
             color: rgb(13, 66, 13);
             text-align: justify;
             padding: 50px 100px 40px 100px;
-            background-image: url(Imagem/mold01.png);
+            background-image: url(IMG/mold01.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            /* Conteudo nos espaços debaixo */
         }
 
         h2 {
             text-transform: uppercase;
             color: rgb(13, 66, 13);
             text-align: center;
+            /* Deixa o texto do titulo dos blocos em maiusculo */
         }
 
         .roda {
             margin-top: -20px;
             height: 330px;
-            background-color: #3e3e8dd;
+            background-color: #e3e8dd;
+            /* foolder, parte de trás*/
         }
 
-        .roda_down_up {
+        .roda .down_up {
             text-align: center;
             color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 4em;
+            /* Cor e fonte do texto dentro do foolder */
         }
 
-        .roda_down_meio {
+        .roda .down_meio {
             text-align: center;
             color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 1.5em;
             text-align: center;
+            /* Cor e fonte do texto dentro do foolder */
         }
 
-        .roda_down_down {
+        .roda .down_down {
             text-align: center;
+            /* centraliza o texto*/
         }
 
-        .roda_down_down img {
+        .roda .down_down img {
             width: 40px;
             border-radius: 25px;
             border: 4px rgb(13, 66, 13) dotted;
             cursor: pointer;
             margin: 20px;
             padding: 5px;
+            /* O negocio que fica ao redor do whatzap, facebook e instagram */
         }
     </style>
+
 </head>
 
 <body>
+
     <div class="cabe">
-        <div class="logo"> <img src="Img/logo_natu (1).png"> </div>
+        <div class="logo">
+            <img src="IMG/logo_natu (1).png">
+        </div>
         <div>
             <ul>
                 <li>HOME</li>
@@ -172,50 +195,71 @@
                 <li>PRODUTOS</li>
                 <li>SOBRE</li>
             </ul>
-        </div> <input class="pesq" type="text" name="pesq" placeholder="Pesquisar">
+        </div>
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar">
     </div>
+
     <div class="box1">
-        <div class="cont-img"> <span class="titulo">NATUREZA É REAL</span> </div>
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É REAL</span>
+        </div>
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit
-            soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore
-            eaque? </p>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
             quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
-            quia! Voluptates. </p>
+            quia! Voluptates.</p>
     </div>
     <div class="box2">
-        <div class="cont-img"> <span class="titulo">NATUREZA É VIVA</span> </div>
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIVA</span>
+        </div>
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit
-            soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore
-            eaque? </p>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
             quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
-            quia! Voluptates. </p>
+            quia! Voluptates.</p>
     </div>
     <div class="box3">
-        <div class="cont-img"> <span class="titulo">NATUREZA É NOSSA</span> </div>
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É NOSSA</span>
+        </div>
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit
-            soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore
-            eaque? </p>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
             quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
-            quia! Voluptates. </p>
+            quia! Voluptates.</p>
     </div>
     <div class="box4">
-        <div class="cont-img"> <span class="titulo">NATUREZA É VIDA</span> </div>
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É AQUI</span>
+        </div>
     </div>
-    <div class="roda"> <br><br><br>
-     
+
+    <div class="roda">
+        <br><br><br>
+        <div class="down_up">NATUREZA</div>
+        <div class="down_meio">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <br>#NATUREZA
+        </div>
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="Im"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="Im"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Im"></a>
+        </div>
     </div>
+
 </body>
 
 </html>
